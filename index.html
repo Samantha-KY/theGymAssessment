@@ -7,9 +7,9 @@
 </head>
 <body >
   <nav class="flex flex-row gap-6 justify-evenly mt-5">
-    <img src="/images/logo.png" alt="" class="w-40 h-30">
+    <img src="/images/logo.png" alt="" class="w-60 h-20">
     <div class="flex flex-col">
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-row gap-4 text-sm">
       <p>Home page</p>
       <p>Index</p>
       <p>Contact</p>
@@ -18,15 +18,97 @@
       <p>Emergencies</p>
       <p>Accessibility Statement</p>
     </div>
-    <div class="flex flex-row">
-      <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black font-medium text-sm px-4 py-2.5 text-center inline-flex items-center " type="button">
+    <div class="flex flex-row gap-4 mt-3 ml-20 mb-5">
+      <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black font-medium text-sm px-4 py-2.5 text-center inline-flex items-center border-2" type="button">
        EN
-        <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+        <svg class="ml-2 w-4 h-4 text-green-600 font-bold" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
         xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
         </path></svg>
       </button>
+      <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black font-medium text-sm px-4 py-2.5 text-center inline-flex items-center border-2" type="button">
+        QuickLinks
+         <svg class="ml-2 w-4 h-4 text-green-600 font-bold" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+         xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+         </path></svg>
+       </button>
+       <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black font-medium text-sm px-4 py-2.5 text-center inline-flex items-center border-2" type="button">
+        Information For
+         <svg class="ml-2 w-4 h-4 text-green-600 font-bold" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+         xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+         </path></svg>
+       </button>
+       <div class="relative flex flex-row  border border-black">
+        <input type="text" placeholder="search With Google TM..." class="w-56 text-sm">
+        <img src="/images/searchIcon2.png" class="absolute ml-40 w-fit h-5 mt-2">
+    </div>
     </div>
   </div>
   </nav>
+  <div class="flex flex-col">
+    <div class="bg-slate-300 h-10 justify-start">
+      <h1 class="text-black mt-3 ml-4">FREIE UNIVESITAT BERLIN</h1>
+    </div>
+    <div class="bg-green-500 flex flex-row gap-8 h-10 text-white">
+      
+      <button class="ml-4">ABOUT</button>
+      <button>EDUCATION</button>
+      <button>RESEARCH</button>
+      <button>DEPARTMENTS</button>
+      <button>INTERNATIONAL</button>
+      <button>EXCELLENCE</button>
+      <button>STRATEGY</button>
+    </div>
+  </div>
+  <div class="justify-center mt-10 ml-10 mr-10 mb-10">
+    
+<div id="default-carousel" class="relative" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden md:h-96">
+       <!-- Item 1 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
+          <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+          <img src="/images/image1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+          <img src="/images/image2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+          <img src="images/image3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+        <img src="images/image4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+      <img src="images/image5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+  </div>
+  </div>
+  <!-- Slider indicators -->
+  <!-- <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  </div> -->
+  <!-- Slider controls -->
+  <!-- <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button> -->
+  <!-- <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button> -->
+  <a href="#" class="absolute mb-10  z-30 space-x-3 -translate-x-1/2 bottom-5 ml-60 block p-6 max-w-sm border-0 shadow-md  dark:bg-black ">
+    <h5 class="mb-2 text-xl font-bold tracking-tight text-white dark:text-white hover:underline">Scholarship available - Apply Now!</h5>
+    <p class="font-normal text-white dark:text-white hover:underline">Student at Freie Universitat with a strong academic record are invited to apply for a Deutschlandstipendium scholarship. Applying is easy - do it in just four steps!</p>
+    <p class="font-normal text-white dark:text-white text-sm mt-10">Image Credit: Patricia Kalisch</p>
+  </a>
+</div>
+  </div>
 </body>
 </html>
